@@ -1,0 +1,280 @@
+.navbar {
+    display: flex;
+   background-image: url(https://media.istockphoto.com/id/1457452372/photo/a-girl-in-a-sweater-raised-her-hands-up-against-the-background-of-a-snowy-forest.jpg?s=1024x1024&w=is&k=20&c=dPOMoEdP7As4th9NfK4doAG7Y464e-0WvsCuS3IkGY4=);
+    position: relative;
+    width: 100vw;
+    height:260px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+ overflow-x: auto;
+    
+
+}
+.navitem{
+ 
+    padding: 5px 5px;
+    margin: 10px;
+    white-space: nowrap;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+    color:white;
+   flex-shrink: 0;
+  
+}
+.navbar p{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+   font-size: clamp(1.3rem, 1.5vw, 2rem);
+    color: #fff;
+    background-color: black;
+    padding: 5px;
+    transform: translate(-50% , -50%);
+    white-space: nowrap;
+}
+ .para p{
+    padding: 15px;
+    margin: 15px;
+ }
+
+ .info{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-between ;
+    align-items: stretch;
+ }
+ .left{
+   
+    padding: 5px;
+    margin: 0;
+    position: relative;
+    box-sizing: border-box; 
+    width: 50%;
+    min-width: 300px;
+ }
+ .left img {
+    width: 35vw;
+    height: 50vh;
+    object-fit: cover;
+ }
+.left .icon{
+    display: flex;
+    align-items: center;
+  gap: 7px;
+  transform: translateX(30%);
+}
+ .right{
+    
+    padding: 5px;
+    margin: 0px;
+    box-sizing: border-box; 
+    width: 50%;
+
+  height: 50vh;
+   
+ }
+ @media (max-width: 400px) {
+  .left, .right {
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    }
+    .left{
+        height: 50vh;
+        max-width: 100%;
+    }
+    .right{
+        overflow: auto;
+    }
+}
+.skills-container {
+  row-gap: 2rem;
+  text-align: center;
+  margin: 20px;
+}
+.section-title{
+    text-align: center;
+    margin: 60px;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+}
+
+
+
+.description {
+  margin-bottom: var(--mb-4);
+}
+
+.skill-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-weight: var(--font-semi);
+  padding: 0.5rem 1rem;
+  margin-bottom: var(--mb-4);
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+}
+
+.skill-name {
+  display: flex;
+  align-items: center;
+}
+
+.skill-icon {
+  font-size: 2rem;
+  margin-right: 20px;
+ color:gray;
+}
+
+.skill-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+background-color: gray;
+  height: 0.25rem;
+  border-radius: 0.5rem;
+  z-index: var(--z-back);
+}
+
+.dance-bar {
+  width: 90%;
+}
+.sing-bar {
+  width: 80%;
+}
+.sketch-bar {
+  width: 75%;
+}
+.photo-bar {
+  width: 85%;
+}
+
+.work_contain
+ {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px; 
+  padding: 20px;
+  margin: 20px;
+}
+
+.work_img img {
+  width: 20vw;
+  height: 40vh;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+@media (max-width: 400px) {
+  .work_contain {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .work_img img {
+    width: 100%;
+    height: 100px;
+  }
+}
+.form_contain {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="submit"] {
+  font-size: 15px;
+  padding: 12px;
+  border: 2px solid #999;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: rgb(124, 117, 117);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color:black;
+}
+
+.add {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap; 
+}
+
+.address i {
+  font-size: 18px;
+  color: gray;
+ 
+}
+
+.address p {
+  font-size: 16px;
+  margin: 5px;
+}
+.footer {
+  width: 100%;
+  min-height: 30vh;
+  position: relative;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.footer a {
+  color: gray;
+  text-decoration: none;
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.footer_icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 20px;
+  position: relative; 
+}
