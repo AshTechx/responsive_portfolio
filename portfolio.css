@@ -84,7 +84,7 @@
         max-width: 100%;
     }
     .right{
-        overflow: auto;
+        overflow:scroll;
     }
 }
 .skills-container {
